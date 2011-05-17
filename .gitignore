@@ -1,8 +1,8 @@
-./LogFileManager/bin/Debug/*
-./LogFileManager/bin/Release/*
-./FileGenerator/bin/Debug/*
-./FileGenerator/bin/Release/*
-./LogFileManager/obj/Debug/*
-./LogFileManager/obj/Release/*
-./FileGenerator/obj/Debug/*
-./FileGenerator/obj/Release/*
+LogFileManager/bin/Debug/*
+LogFileManager/bin/Release/*
+FileGenerator/bin/Debug/*
+FileGenerator/bin/Release/*
+LogFileManager/obj/Debug/*
+LogFileManager/obj/Release/*
+FileGenerator/obj/Debug/*
+FileGenerator/obj/Release/*
