@@ -38,6 +38,17 @@ Should the program encounter any issues, it will display an error message depend
 Update History
 ==============
 
+v1.0 -- 05/18/2011:
++ The program now scans the current directory for old .zip archives (the definition of "old" is easily redefined) and cleans them from the current directory
++ Command-line arguments added:
+	-a or --age-max <maximum>:			Change maximum archive age
+	-c or --config-file <filename>:		Use a different config-file this time
+	-h or --help:						Bring up the help menu
+	-r or --regex <string>:				Change filename pattern to archive
+	-s or --source <directory>:			Change directory of files to archive
++ Properties are now saved across sessions in a config file. The args -a, -r, and -s will change the
+	entries of this file so that they can be modified easily and remembered between runtimes.
+
 v1.0b -- 05/17/2011:
 + Updated code to store the set of relevant filenames in a string array instead of a List. This allows for faster lookup times and a more compact storage. Not entirely noticeable on small amounts of files, but definitely noticeable on mass quantities.
 + Now with exception catches!
