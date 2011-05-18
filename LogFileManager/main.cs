@@ -71,6 +71,11 @@ namespace LogFileManager
                 else
                     config.GetTable().Add("MAX_AGE", Convert.ToString(MAX_AGE));
 
+                if (config.GetTable().TryGetValue("REGEX", out val))
+                    REGEX = config["REGEX"];
+                else
+                    config.GetTable().Add("REGEX", REGEX);
+
                 //Rewrite the config file
                 config.RewriteConfig();
 
