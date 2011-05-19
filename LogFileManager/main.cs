@@ -31,12 +31,13 @@ namespace LogFileManager
             //Parse arguments and get files
             ParseArgs(args);
 
-            //Do stuff only if the help menu wasn't brought up
+            //If the help menu was brought up, terminate
             if ((args.Length != 0) && (args[0].Equals("-h") | args[0].Equals("--help")))
                 return;
 
+			//Update global variables and collect file names
             FUNCTIONS.UpdateVars();
-            string[] files = FUNCTIONS.CollectFileNames(SRC, REGEX);
+            string[] files = FUNCTIONS.CollectFileNames(SRC, REGEX)
 
             //Only perform following if directory exists (if not, CollectFileNames will output appropriate error)
             if(FUNCTIONS.DIREC_FOUND)

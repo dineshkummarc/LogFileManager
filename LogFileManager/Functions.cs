@@ -88,9 +88,7 @@ namespace LogFileManager
                 //Notify user of files not written, if any
                 Console.WriteLine();
                 foreach (string _file in notWritten)
-                {
                     Console.WriteLine(_file + " not written to archive " + DST);
-                }
 
                 try
                 {
