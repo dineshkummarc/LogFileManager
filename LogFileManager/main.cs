@@ -37,7 +37,7 @@ namespace LogFileManager
 
 			//Update global variables and collect file names
             FUNCTIONS.UpdateVars();
-            string[] files = FUNCTIONS.CollectFileNames(SRC, REGEX)
+            string[] files = FUNCTIONS.CollectFileNames(SRC, REGEX);
 
             //Only perform following if directory exists (if not, CollectFileNames will output appropriate error)
             if(FUNCTIONS.DIREC_FOUND)

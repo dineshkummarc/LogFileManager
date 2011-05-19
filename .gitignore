@@ -6,3 +6,4 @@ LogFileManager/obj/Debug/*
 LogFileManager/obj/Release/*
 FileGenerator/obj/Debug/*
 FileGenerator/obj/Release/*
+FileGenerator/bin
